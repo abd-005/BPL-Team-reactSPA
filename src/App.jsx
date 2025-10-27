@@ -1,9 +1,15 @@
+import AvailablePlayers from "./Components/AvailablePlayers"
+import Navbar from "./Components/Navbar"
+import SelectedPlayers from "./Components/SelectedPlayers"
+
 function App() {
 
 
   return (
     <>
-      <h1 className="text-center text-2xl">BPL Team</h1>
+      <Navbar/>
+      <AvailablePlayers/>
+      {/* <SelectedPlayers/> */}
     </>
   )
 }

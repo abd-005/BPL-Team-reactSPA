@@ -1,0 +1,134 @@
+[
+  {
+    "playerID": 101,
+    "playerImg": "https://i.ibb.co/tptMxF8M/Shakib-Al-Hasan.png",
+    "playerName": "Shakib Al Hasan",
+    "playerCountry": "Bangladesh",
+    "playerRole": "All-Rounder",
+    "rating": 9.2,
+    "batingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Slow Left-Arm Orthodox",
+    "price": 95000
+  },
+  {
+    "playerID": 102,
+    "playerImg": "https://i.ibb.co/0y421d9m/Tamim-Iqbal.jpg",
+    "playerName": "Tamim Iqbal",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Batsman",
+    "rating": 8.5,
+    "batingStyle": "Left-Hand Bat",
+    "bowlingStyle": "None",
+    "price": 75000
+  },
+  {
+    "playerID": 103,
+    "playerImg": "https://i.ibb.co/6cDDC7tM/Andre-Russell.jpg",
+    "playerName": "Andre Russell",
+    "playerCountry": "West Indies",
+    "playerRole": "All-Rounder",
+    "rating": 8.9,
+    "batingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Fast",
+    "price": 120000
+  },
+  {
+    "playerID": 104,
+    "playerImg": "https://i.ibb.co/vvYRMfhq/Mujeeb-Ur-Rahman.jpg",
+    "playerName": "Litton Das",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Wicketkeeper Batsman",
+    "rating": 8.3,
+    "batingStyle": "Right-Hand Bat",
+    "bowlingStyle": "None",
+    "price": 70000
+  },
+  {
+    "playerID": 105,
+    "playerImg": "https://i.ibb.co/Jjpt58tT/Litton-Das.jpg",
+    "playerName": "Mujeeb Ur Rahman",
+    "playerCountry": "Afghanistan",
+    "playerRole": "Bowler",
+    "rating": 8.7,
+    "batingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 85000
+  },
+  {
+    "playerID": 106,
+    "playerImg": "https://i.ibb.co/ychrmTQL/Mujeeb-Ur-Rahman.jpg",
+    "playerName": "Nasum Ahmed",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Bowler",
+    "rating": 7.9,
+    "batingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Slow Left-Arm Orthodox",
+    "price": 40000
+  },
+  {
+    "playerID": 107,
+    "playerImg": "https://i.ibb.co/tptMxF8M/Shakib-Al-Hasan.png",
+    "playerName": "Colin Munro",
+    "playerCountry": "New Zealand",
+    "playerRole": "Batsman",
+    "rating": 8.6,
+    "batingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Right-Arm Medium",
+    "price": 90000
+  },
+  {
+    "playerID": 108,
+    "playerImg": "https://i.ibb.co/0y421d9m/Tamim-Iqbal.jpg",
+    "playerName": "Mahedi Hasan",
+    "playerCountry": "Bangladesh",
+    "playerRole": "All-Rounder",
+    "rating": 8.0,
+    "batingStyle": "Right-Hand Bat",
+    "bowlingStyle": "Right-Arm Off Break",
+    "price": 55000
+  },
+  {
+    "playerID": 109,
+    "playerImg": "https://i.ibb.co/6cDDC7tM/Andre-Russell.jpg",
+    "playerName": "Mustafizur Rahman",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Bowler",
+    "rating": 9.0,
+    "batingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Left-Arm Fast-Medium",
+    "price": 80000
+  },
+  {
+    "playerID": 110,
+    "playerImg": "https://i.ibb.co/vvYRMfhq/Mujeeb-Ur-Rahman.jpg",
+    "playerName": "Rassie van der Dussen",
+    "playerCountry": "South Africa",
+    "playerRole": "Batsman",
+    "rating": 8.4,
+    "batingStyle": "Right-Hand Bat",
+    "bowlingStyle": "None",
+    "price": 78000
+  },
+  {
+    "playerID": 111,
+    "playerImg": "https://i.ibb.co/Jjpt58tT/Litton-Das.jpg",
+    "playerName": "Nurul Hasan",
+    "playerCountry": "Bangladesh",
+    "playerRole": "Wicketkeeper Batsman",
+    "rating": 7.7,
+    "batingStyle": "Right-Hand Bat",
+    "bowlingStyle": "None",
+    "price": 35000
+  },
+  {
+    "playerID": 112,
+    "playerImg": "https://i.ibb.co/ychrmTQL/Mujeeb-Ur-Rahman.jpg",
+    "playerName": "Wahab Riaz",
+    "playerCountry": "Pakistan",
+    "playerRole": "Bowler",
+    "rating": 8.2,
+    "batingStyle": "Left-Hand Bat",
+    "bowlingStyle": "Left-Arm Fast",
+    "price": 60000
+  }
+]
