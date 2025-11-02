@@ -2,18 +2,18 @@ import React, { useState } from "react";
 import userImg from "../assets/user.png";
 import flagImg from "../assets/flag.png";
 
-const PlayerCrad = ({ player, availableBalance, setAvailableBalance }) => {
+const PlayerCard = ({ player, availableBalance, setAvailableBalance, purchasedPlayers, setPurchasedPlayers }) => {
   const [isSelected, setIsSelected] = useState(false);
 
-  const handleSelected = (player)=>{
-    if(availableBalance<player.price){
-        alert("Insufficient Bal!")
-        return
+  const handleSelected = (player) => {
+    if (availableBalance < player.price) {
+      alert("Insufficient Bal!");
+      return;
     }
-    setIsSelected(!isSelected)
-    setAvailableBalance(availableBalance-player.price)
-
-  }
+    setIsSelected(!isSelected);
+    setAvailableBalance(availableBalance - player.price);
+    setPurchasedPlayers([...purchasedPlayers,player])
+  };
 
   return (
     <div className="card bg-base-100 shadow-lg p-4">
@@ -62,8 +62,7 @@ const PlayerCrad = ({ player, availableBalance, setAvailableBalance }) => {
             <button
               disabled={isSelected}
               onClick={() => {
-                
-                handleSelected(player)
+                handleSelected(player);
               }}
               className="btn"
             >
@@ -76,4 +75,4 @@ const PlayerCrad = ({ player, availableBalance, setAvailableBalance }) => {
   );
 };
 
-export default PlayerCrad;
+export default PlayerCard;
