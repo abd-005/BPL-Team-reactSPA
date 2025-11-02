@@ -1,4 +1,4 @@
-import { Suspense, useState } from "react";
+import { Suspense, use, useState } from "react";
 import AvailablePlayers from "./Components/AvailablePlayers";
 import Navbar from "./Components/Navbar";
 import SelectedPlayers from "./Components/SelectedPlayers";
@@ -10,16 +10,27 @@ const fetchPlayers = async () => {
 };
 const playersPromise = fetchPlayers();
 
+
+
 function App() {
   const [toggle, setToggle] = useState(true);
   const [availableBalance, setAvailableBalance] = useState(1000000);
   const [purchasedPlayers, setPurchasedPlayers] = useState([]);
+  
+  const removePlayer = (p) => {
+    console.log(purchasedPlayers);
+    const remainedPlayer = purchasedPlayers.filter(player => player.playerID!==p.playerID);
+    setPurchasedPlayers(remainedPlayer);
+    setAvailableBalance(availableBalance + p.price);
+  }
+  const playersData = use(playersPromise);
+
 
   return (
     <>
       <Navbar availableBalance={availableBalance} />
       <div className="max-w-[1200px] mx-auto my-10 flex justify-between items-center">
-        {toggle === true ? "Available Players" : `Selected Players(${0})`}
+        {toggle === true ? "Available Players" : `Selected Players(${purchasedPlayers.length}/${playersData.length})`}
         <div className="flex items-center">
           <button
             onClick={() => {
@@ -39,7 +50,7 @@ function App() {
               toggle === true ? "" : "bg-amber-300"
             }`}
           >
-            Selected (<span>0</span>)
+            Selected (<span>{purchasedPlayers.length}</span>)
           </button>
         </div>
       </div>
@@ -56,7 +67,7 @@ function App() {
           />
         </Suspense>
       ) : (
-        <SelectedPlayers purchasedPlayers={purchasedPlayers} />
+        <SelectedPlayers purchasedPlayers={purchasedPlayers} removePlayer={removePlayer} />
       )}
     </>
   );

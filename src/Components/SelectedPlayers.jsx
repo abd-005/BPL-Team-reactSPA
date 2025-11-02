@@ -1,12 +1,19 @@
-import React from 'react';
+import React from "react";
+import SelectedCard from "./SelectedCard";
 
-const SelectedPlayers = ({purchasedPlayers, setPurchasedPlayers}) => {
-    console.log(purchasedPlayers)
-    return (
-        <div className="max-w-[1200px] mx-auto my-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            Selected
-        </div>
-    );
+const SelectedPlayers = ({ purchasedPlayers, removePlayer }) => {
+  //   console.log(purchasedPlayers);
+  return (
+    <div className="max-w-[1200px] mx-auto">
+      {purchasedPlayers.map((player) => (
+        <SelectedCard
+          key={player.playerID}
+          player={player}
+          removePlayer={removePlayer}
+        />
+      ))}
+    </div>
+  );
 };
 
 export default SelectedPlayers;
